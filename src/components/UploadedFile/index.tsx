@@ -10,9 +10,9 @@ export default function UploadedFile({ file }: UploadedFileProps) {
     return (
         <Card isPressable isHoverable variant="bordered" css={{ mw: '400px', mt: '5%' }}>
             <Card.Body>
-                <Text>{file.name}</Text>
-                <Text>{file.size}</Text>
-                <Text>{file.extension}</Text>
+                <Text>Name: {file.name}</Text>
+                <Text>Size: {file.size}MB</Text>
+                <Text>Extension: {file.extension}</Text>
             </Card.Body>
         </Card>
     )
