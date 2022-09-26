@@ -33,8 +33,8 @@ export default function App() {
     }, [])
 
     const handleUpload = useCallback((files: FileList | null) => {
-        setLoading(true)
         if (files && files.length > 0) {
+            setLoading(true)
             postFiles(files).then(data => {
                 setUploadedFile(data[0])
                 setLoading(false)
